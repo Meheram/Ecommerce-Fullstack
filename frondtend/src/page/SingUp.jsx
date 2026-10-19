@@ -90,13 +90,13 @@ const { signup,loading  } = useUserStore();
               className="w-full pl-10 pr-10 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-white"
               placeholder="••••••••"
             />
-            <button
-              type="button"
-              onClick={() => setShowPassword(!showPassword)}
-              placeholder="••••••••"
-            >
-              {showPassword ? <EyeOff size={14} /> : <Eye size={14} />}
-            </button>
+          <button
+  type="button"
+  onClick={() => setShowPassword(!showPassword)}
+  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-green-400 bg-transparent p-0"
+>
+  {showPassword ? <EyeOff size={14} /> : <Eye size={14} />}
+</button>
           </div>
 
           {/* Confirm Password */}
